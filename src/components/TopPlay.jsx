@@ -1,4 +1,4 @@
-import {useEffect, useRef} from 'react';
+// import {useEffect, useRef} from 'react';
 import {Link} from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux';
 
@@ -48,14 +48,14 @@ const TopPlay = () => {
   data = data?.tracks;
   // console.log(data);
 
-  const divRef = useRef(null);
+  // const divRef = useRef(null);
 
   const topPlays = data?.slice(0, 5);
   // console.log(topPlays);
 
-  useEffect(() => {
-    divRef.current.scrollIntoView({behavior: 'smooth'});
-  });
+  // useEffect(() => {
+  //   divRef.current.scrollIntoView({behavior: 'smooth'});
+  // });
 
   const handlePauseClick = () => {
     dispatch(playPause(false));
@@ -68,7 +68,7 @@ const TopPlay = () => {
 
   return (
     <div
-      ref={divRef}
+      // ref={divRef}
       className=' xl:ml-6 ml-0 xl:mb-0 mb-6 flex-1 xl:max-w-[500px] max-w-full flex flex-col   '
     >
       <div className=' w-full flex flex-col'>
