@@ -18,6 +18,7 @@ Lyriks is an elementary Spotify clone web application that I proudly developed a
 ## Built with
 
 - React JS
+- Redux
 - Tailwind
 - Rapid API
 - Shazam Api
